@@ -1,4 +1,5 @@
 import { prisma } from "@/prisma";
+
 async function getAllTeachers() {
   const teachers = await prisma.teacher.findMany({
     include: {

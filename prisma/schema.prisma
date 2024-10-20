@@ -16,6 +16,7 @@ datasource db {
 model Teacher {
   id           String   @id @default(cuid())
   name         String
+  age          Int
   gender       String
   email        String
   salary       Int
